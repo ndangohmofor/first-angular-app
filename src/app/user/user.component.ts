@@ -4,8 +4,8 @@ import { Component, computed, EventEmitter, Input, input, Output, output } from 
   selector: 'app-user',
   standalone: true,
   imports: [],
-  templateUrl: './user.html',
-  styleUrl: './user.css',
+  templateUrl: './user.component.html',
+  styleUrl: './user.component.css',
 })
 export class UserComponent {
   @Input({ required: true }) id!: string;
