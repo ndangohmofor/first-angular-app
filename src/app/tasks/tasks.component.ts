@@ -11,6 +11,7 @@ import { filter } from 'rxjs';
 export class TasksComponent {
   @Input({ required: true }) userId!: string;
   @Input() name: string | undefined;
+  isAddingTask = false;
   tasks = [
     {
       id: 't1',
@@ -42,5 +43,9 @@ export class TasksComponent {
   onCompleteTask(id: string) {
     //TODO: add code to complete a task
     this.tasks = this.tasks.filter((task) => task.id !== id);
+  }
+
+  onStartAddTask() {
+    this.isAddingTask = true;
   }
 }
