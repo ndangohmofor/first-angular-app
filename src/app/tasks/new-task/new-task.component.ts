@@ -19,10 +19,10 @@ export class NewTaskComponent {
   }
 
   onSubmit() {
-    const taskData = {
+    this.addTask.emit({
       title: this.enteredTitle,
       summary: this.enteredSummary,
       dueDate: this.enteredDate,
-    };
+    });
   }
 }
