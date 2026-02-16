@@ -24,10 +24,10 @@ export class TasksComponent {
     return this.tasksService.getUserTasks(this.userId);
   }
 
-  onCompleteTask(id: string) {
-    //TODO: add code to complete a task
-    this.tasksService.removeTask(id);
-  }
+  // onCompleteTask(id: string) {
+  //   //TODO: add code to complete a task
+  //   this.tasksService.removeTask(id);
+  // }
 
   onStartAddTask() {
     this.isAddingTask = true;
