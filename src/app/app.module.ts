@@ -6,9 +6,9 @@ import { UserComponent } from './user/user.component';
 import { TasksComponent } from './tasks/tasks.component';
 
 @NgModule({
-  imports: [BrowserModule, HeaderComponent, UserComponent, TasksComponent],
+  imports: [BrowserModule, UserComponent, TasksComponent],
   exports: [],
-  declarations: [AppComponent],
+  declarations: [HeaderComponent, AppComponent],
   bootstrap: [AppComponent],
   providers: [],
 })
