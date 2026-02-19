@@ -9,9 +9,9 @@ import { TaskComponent } from './tasks/task/task.component';
 import { NewTaskComponent } from './tasks/new-task/new-task.component';
 
 @NgModule({
-  imports: [BrowserModule, CardComponent, TaskComponent, NewTaskComponent],
+  imports: [BrowserModule, CardComponent, NewTaskComponent],
   exports: [],
-  declarations: [HeaderComponent, AppComponent, UserComponent, TasksComponent],
+  declarations: [HeaderComponent, AppComponent, UserComponent, TasksComponent, TaskComponent],
   bootstrap: [AppComponent],
   providers: [],
 })
