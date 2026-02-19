@@ -6,9 +6,10 @@ import { required } from '@angular/forms/signals';
 
 @Component({
   selector: 'app-new-task',
-  imports: [FormsModule],
+  // imports: [FormsModule],
   templateUrl: './new-task.component.html',
   styleUrl: './new-task.component.css',
+  standalone: false,
 })
 export class NewTaskComponent {
   @Input({ required: true }) userId!: string;
